@@ -1,3 +1,3 @@
-const baseUrl = "http://localhost:3002";
+const baseUrl = "https://reactdemoapp2.azurewebsites.net";
 
 export default baseUrl;
