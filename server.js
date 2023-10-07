@@ -4,7 +4,7 @@ const cors = require("cors");
 const path = require('path');
 
 // const mongoose = require("mongoose");
-const port = process.env.PORT || 3002;
+const port = process.env.PORT || 'https://reactdemoapp2.azurewebsites.net';
 
 const app = express();
 
@@ -25,7 +25,7 @@ app.use(cors());
 //db model
 // const User = new mongoose.model("User", userSchema);
 
-app.get("/get-users", (req, res) => {
+app.get("/", (req, res) => {
   res.json({name: 'kaniyan', lastName: 'karuthavel pandian'})
 });
 
